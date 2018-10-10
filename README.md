@@ -13,7 +13,7 @@ LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for mov
      * Venue location
 
      * Date of the Event (use moment to format this as "MM/DD/YYYY")
- * <img src="./gif/liri_concert.png">
+ * <img src="./images/liri_concert.PNG">
      
 
 2. `node liri.js spotify-this-song '<song name here>'`
