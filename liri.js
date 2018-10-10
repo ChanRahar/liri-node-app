@@ -131,18 +131,5 @@ function runLiri() {
     }
 }
 
-// if (userCommand == "do-what-it-says") {
-//     var fs = require("fs");
-//     fs.readFile("random.txt", "utf8", function (error, data) {
-//         if (error) {
-//             return console.log(error)
-//         }
-//         //Split data into array
-//         var textArr = data.split(",");
-//         userCommand = textArr[0];
-//         userInput = textArr[1];
-//         runLiri();
-//     })
-// }
 
 runLiri();

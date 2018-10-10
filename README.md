@@ -27,6 +27,7 @@ LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for mov
      * A preview link of the song from Spotify
 
      * The album that the song is from
+   * <img src="./images/liri_spotify.PNG">
 
 3. `node liri.js movie-this '<movie name here>'`
 
@@ -41,5 +42,8 @@ LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for mov
        * Language of the movie.
        * Plot of the movie.
        * Actors in the movie.
-
+   * <img src="./images/liri_movie.PNG">
 4. `node liri.js do-what-it-says`
+ * This will output spotify song search for "I Want It That Way":
+
+ * <img src="./images/liri_concert.PNG">
