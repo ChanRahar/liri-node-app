@@ -11,8 +11,6 @@ var spotify = new Spotify(keys.spotify);
 var moment = require('moment');
 moment().format();
 
-var fs = require("fs")
-
 var nodeArgs = process.argv;
 var userInput = "";
 
@@ -34,7 +32,8 @@ function runLiri() {
     switch (userCommand) {
         case "concert-this":
 
-            var queryURL = "https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp"
+            var queryURL = "https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp";
+            
             request(queryURL, function (error, response, body) {
 
                 if (!error && response.statusCode === 200) {
@@ -47,7 +46,6 @@ function runLiri() {
 
                         if (data[i].venue.region == "") {
                             console.log("Location: " + data[i].venue.city + ", " + data[i].venue.country);
-                            //Append data to log.txt
 
                         } else {
                             console.log("Location: " + data[i].venue.city + ", " + data[i].venue.region + ", " + data[i].venue.country);
@@ -88,8 +86,7 @@ function runLiri() {
                         console.log("Song Name: " + trackName)
                         console.log("Preview of Song: " + preview)
                         console.log("Album Name: " + albumObject.name)
-                        console.log("----------------")
-                        //Append data to log.txt
+                        console.log("----------------");
 
                     }
                 }
@@ -122,7 +119,7 @@ function runLiri() {
                 if (error) {
                     return console.log(error)
                 }
-                //Split data into array
+
                 var textArr = data.split(",");
                 userCommand = textArr[0];
                 userInput = textArr[1];
